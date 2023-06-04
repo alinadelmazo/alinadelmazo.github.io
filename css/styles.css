@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0; 
+  list-style: none;  
+  font-family: Century Gothic, sans-serif;
+}
+
+body {
+  background: #585c68;
+  font-size: 14px;
+  line-height: 22px;
+  color: #555555;
+}
+
+.resume {
+  width: 800px;
+  height: auto;
+  display: flex;
+  margin: 50px auto;
+}
+
+.resume_item {
+  padding: 20px 0;
+  border-bottom: 2px solid #2198c4;
+}
+
+.resume_item:last-child {
+  border-bottom: 0px;
+}
+
+.bold {
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.semi-bold {
+  font-weight: 550;
+  font-size: 16px;
+}
+
+.resume_left {
+  width: 300px;
+  background: #555555;
+}
+
+.resume_left .title {
+  margin-bottom: 10px;
+  color: #b1eaff;
+}
+
+.resume_left .descr {
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.resume_left .resume_profile {
+  width: 100%;
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resume_left .resume_profile img {
+  width: 80%;
+  height: 80%;
+  border: 5px solid #2198c4;
+  border-radius: 50%;
+}
+
+.resume_left .resume_content {
+  padding: 0 25px;
+}	
+
+.resume_left .contact ul li {
+  display: flex;
+  margin-bottom: 5px;
+  align-items: center;
+}
+
+.resume_left .contact ul li .icon {
+  width: 30px;
+  height: 30px;
+  background: #b1eaff;
+  color: #0bb5f4;
+  border-radius: 50%;
+  margin-right: 15px;
+  font-size: 16px;
+  position: relative; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resume_left .contact ul li .icon img {
+  width: 50%;
+  height: 60%;
+  border-radius: 50%;
+}
+
+.resume_left .contact ul li .data {
+  color: #ffffff;
+  line-height: 15px;
+}
+
+.resume_left .tech_skills ul li::before {
+  content: "\2022";  
+  color: #b1eaff; 
+  font-weight: bold; 
+  display: inline-block; 
+  width: 1em; 
+  margin-left: 0.5em;  
+}
+
+.resume_left .tech_skills ul li {
+  display: flex;
+  align-items: center; 
+}
+
+.resume_left .tech_skills ul li .data {
+  color: #ffffff;
+  line-height: 15px;
+}
+
+.resume_right .languages ul li {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.resume_left .languages ul li .lang_name {
+  width: 25%;
+}
+
+.resume_left .languages ul li .lang_percent {
+  width: 100%;
+  height: 5px;
+  background: #009fd9;
+  position: relative;
+}
+
+.resume_left .languages ul li .lang_percent span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #fff;
+}
+
+.resume_right {
+  width: 500px;
+  background: #f2f0f0;
+  padding: 25px;  
+}
+
+.resume_right .title {
+  margin-bottom: 10px;
+}
+
+.resume_right .name {
+  width: 100%;
+  height: 190px;
+  font-weight: 500;
+  font-size: 70px; 
+  line-height: 60px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.resume_right .work ul,
+.resume_right .education ul {
+  padding-left: 40px;
+  overflow: hidden;
+}
+
+.resume_right ul li {
+  position: relative;
+}
+
+.resume_right ul li .date {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.resume_right ul li .info {
+  margin-bottom: 9px;
+}
+
+.resume_right ul li:last-child .info {
+  margin-bottom: 0;
+}
+
+.resume_right .work ul li:before,
+.resume_right .education ul li:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -25px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 2px solid #2198c4;
+}
+
+.resume_right .work ul li:after,
+.resume_right .education ul li:after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: -21px;
+  width: 2px;
+  height: 100%;
+  background: #2198c4;
+}
+
+.resume_right ul li .info .info_title {
+  font-style: italic;
+  text-indent: 15px;
+}
+
+.resume_right ul li .info .info_descr {
+  margin-bottom: 5px;
+  line-height: 18px;
+}
+
+.resume_right ul li .info ul li {
+  position: relative; 
+  line-height: 18px;
+}
+
+.resume_right ul li .info ul li:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -20px;
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  border: 3px solid #2198c4;
+}
+
+.resume_right ul li .info ul li:after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: -50px;
+  width: 2px;
+  height: 100%;
+  background: #f2f0f0;
+}
